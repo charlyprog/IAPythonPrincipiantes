@@ -8,18 +8,18 @@ ventana.title('Manejo de etiquetas')
 ventana.configure(background='#1d2d44')
 
 # Creamos una etiqueta (label)
-etiqueta = tk.Label(ventana, text='Saludos')
+#etiqueta = tk.Label(ventana, text='Saludos')
 #etiqueta = tk.Label(ventana, text='Saludos', font=('Arial', 20), bg='#1d2d44', fg='white')
-#etiqueta = ttk.Label(ventana, text='Saludos')
+etiqueta = ttk.Label(ventana, text='Saludos', font=('Arial', 20), background='#1d2d44', foreground='white')
 
 # Cambiar el texto usando el metodo configure
-#etiqueta.configure(text='Nos vemos...')
+etiqueta.configure(text='Nos vemos...')
 
 # Cambiar el texto con ayuda de la llave text
-#etiqueta['text'] = 'Adios'
+etiqueta['text'] = 'Adios'
 
 # Publicamos el componente
 #etiqueta.pack()
-#etiqueta.pack(pady=20)
+etiqueta.pack(pady=20)
 
 ventana.mainloop()
