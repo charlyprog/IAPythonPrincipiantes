@@ -19,9 +19,9 @@ class DatabaseManager:
         """Crea la base de datos y la tabla si no existen."""
         try:
             db = mysql.connector.connect(
-                host=self.config["host"],
-                user=self.config["user"],
-                password=self.config["password"]
+                host=self.config["localhost"],
+                user=self.config["root"],
+                password=self.config["12345678"]
             )
             cursor = db.cursor()
             cursor.execute(f"CREATE DATABASE IF NOT EXISTS {self.config['database']}")
