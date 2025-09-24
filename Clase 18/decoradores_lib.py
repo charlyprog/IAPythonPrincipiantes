@@ -1,4 +1,5 @@
 # Módulo reutilizable de decoradores
+import time
 
 def mi_decorador(funcion_original):
     """Un decorador simple que muestra mensajes antes y después

@@ -18,6 +18,6 @@ def mi_decorador(funcion_original):
 
 
 # Usamos el decorador
-#saludar = mi_decorador(saludar)
+saludar = mi_decorador(saludar)
 
 saludar()    
