@@ -16,7 +16,9 @@ def extraer_datos_contacto(texto):
         messages=[
             {
                 "role": "system",
-                "content": "Tu tarea es extraer el nombre, email y empresa de un texto. Debes devolver la información únicamente en formato JSON."
+                "content": """Tu tarea es extraer el nombre, email y empresa de un texto.
+                              Debes devolver la información únicamente en formato JSON.
+                              Solo el json con los datos."""
             },
             {
                 "role": "user",
